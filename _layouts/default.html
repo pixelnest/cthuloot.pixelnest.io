@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>CTHULOOT - arcade coop mutliplayer game</title>
+
+    {% include meta.html %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <script src="/static/lib/tailwind_3.3.5.js"></script>
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/regular.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" href="/static/css/site.css" />
+</head>
+
+<body class="bg f">
+
+    <nav class="bg-gray-950 border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-6">
+            <a href="{{site.url}}" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- <span class="lilita text-white text-bold text-6xl">CTHULOOT</span> -->
+                <img class="h-8" src="{{site.url}}/static/images/assets/logo.png" alt="CTHULOOT" />
+            </a>
+            <div class="block w-auto" id="navbar-default">
+                <ul
+                    class="lilita font-medium flex flex-row space-x-3 md:space-x-8 rtl:space-x-reverse">
+                    <li>
+                        <a href="https://pixelnest2.notion.site/CTHULOOT-Presskit-b5491e97e8d646afba14a01f449f71d8 "
+                            class="block md:text-xl text-white rounded hover:text-blue-700">
+                            Presskit
+                        </a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="https://pixelnest.io/"
+                        class="block text-xl md:text-white rounded hover:text-blue-700">
+                            More games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/invite/taMGFcG9qs"
+                        class="block md:text-xl text-white rounded hover:text-blue-700">
+                            <div class="flex flex-row space-x-2">
+                                <img class="flex w-8 hidden md:block" src="/static/images/site/discord.png" alt="Discord">
+                                <span class="flex">Discord</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+</body>
+
+</html>

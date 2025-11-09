@@ -1,0 +1,25 @@
+title: CTHULOOT
+
+# -------------------------------------------------------
+# Globals.
+# -------------------------------------------------------
+
+show_drafts: nil
+permalink: /:title/
+
+include: ['_pages']
+exclude: ['README.md', 'LICENSE', 'package.json', 'gulpfile.js', 'node_modules', 'Gemfile', 'Gemfile.lock']
+
+excerpt_separator: <!--more-->
+
+# -------------------------------------------------------
+# Defaults.
+# -------------------------------------------------------
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+ 

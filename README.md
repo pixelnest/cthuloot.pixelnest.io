@@ -1,6 +1,6 @@
 # CTHULOOT's website
 
-Website: [https://cthuloot.games](https://cthuloot.games)
+Website: [https://cthuloot.pixelnest.io](https://cthuloot.pixelnest.io)
 
 ## Local server
 
